@@ -1,0 +1,33 @@
+import msvcrt
+import time
+f=10
+c1=c2=c3=0
+print "press enter key to get started"
+raw_input()
+st=time.time()
+while(1):
+	k=msvcrt.getch()
+	if k=='\xe0':
+		c1=c1+1
+		print "-->"
+		if c1==f:
+			print "Move downwards"
+			k1=msvcrt.getch()
+			if k1=='\xe0':
+				c2=c2+1
+				print "|"
+				if c2==f:
+					print "Move right"
+					k2=mscvrt.getch()
+					if k2=='\xe0':
+						break
+					else
+						print "Invalid input. You have lost"
+			else
+				print "Invalid input.You have lost"
+	else
+		print "You have lost.Invalid input"
+
+time_elapsed=time.time()-st
+print "Congratulations! You have won the game"
+print "Time taken is: "+str(time_elapsed)
