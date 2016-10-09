@@ -43,3 +43,9 @@ if c2==f:
 			print "you lose"
 time_elapsed=time.time()-s_time
 print "time taken is"+str(time_elapsed)
+
+
+'''
+1. Mention controls for the game.
+2. The game should be lost on pressing the wrong key
+'''
